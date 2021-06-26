@@ -6,7 +6,7 @@ app.set('views','./views');
 app.use(date = ( req, res, next) =>{
    let requestAt = new Date().getHours()
    console.log(requestAt)
-   if (requestAt <8 || requestAt>=20) res.send('Our office is not open now')
+   if (requestAt <9 || requestAt>=17) res.send('Our office is not open now')
    next()
 })
 // Use Express to create the server and handle routes.
